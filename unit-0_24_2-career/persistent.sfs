@@ -1,0 +1,248 @@
+GAME
+{
+	version = 0.24.2
+	Title = unit-0_24_2-career (CAREER)
+	Description = No description available.
+	linkURL = 
+	linkCaption = 
+	Mode = CAREER
+	Status = 1
+	scene = 5
+	flag = Squad/Flags/default
+	launchID = 1
+	PARAMETERS
+	{
+		FLIGHT
+		{
+			CanQuickSave = True
+			CanQuickLoad = True
+			CanAutoSave = True
+			CanUseMap = True
+			CanSwitchVesselsNear = True
+			CanSwitchVesselsFar = True
+			CanTimeWarpHigh = True
+			CanTimeWarpLow = True
+			CanEVA = True
+			CanIVA = True
+			CanBoard = True
+			CanRestart = True
+			CanLeaveToEditor = True
+			CanLeaveToTrackingStation = True
+			CanLeaveToSpaceCenter = True
+			CanLeaveToMainMenu = False
+		}
+		EDITOR
+		{
+			CanSave = True
+			CanLoad = True
+			CanStartNew = True
+			CanLaunch = True
+			CanLeaveToSpaceCenter = True
+			CanLeaveToMainMenu = False
+			startUpMode = 0
+			craftFileToLoad = 
+		}
+		TRACKINGSTATION
+		{
+			CanFlyVessel = True
+			CanAbortVessel = True
+			CanLeaveToSpaceCenter = True
+			CanLeaveToMainMenu = False
+		}
+		SPACECENTER
+		{
+			CanGoInVAB = True
+			CanGoInSPH = True
+			CanGoInTrackingStation = True
+			CanLaunchAtPad = True
+			CanLaunchAtRunway = True
+			CanLeaveToMainMenu = True
+		}
+		DIFFICULTY
+		{
+			MissingCrewsRespawn = True
+			AllowStockVessels = False
+		}
+	}
+	SCENARIO
+	{
+		name = ScenarioDiscoverableObjects
+		scene = 7, 8, 5
+		int_1 = 559298752
+		sizeCurve
+		{
+			key = 0 0 1.5 1.5
+			key = 0.3 0.45 0.875 0.875
+			key = 0.7 0.55 0.875 0.875
+			key = 1 1 1.5 1.5
+		}
+	}
+	SCENARIO
+	{
+		name = ContractSystem
+		scene = 7, 8, 5, 6, 9
+		update = 0.04
+		CONTRACTS
+		{
+			CONTRACT
+			{
+				guid = 158ace9a-0c7c-46cd-a374-3f5803888fca
+				type = ReachSpace
+				prestige = 2
+				seed = 1295941129
+				state = Offered
+				agent = Kerbin World-Firsts Record-Keeping Society
+				deadlineType = None
+				expiryType = None
+				values = 0,0,9448.81868362427,29527.5583863258,12000,15,95.25,0,0,0,0,0
+				PARAM
+				{
+					name = ReachSpace
+					state = Incomplete
+					values = 0,0,0,0,0
+				}
+			}
+			CONTRACT
+			{
+				guid = 9f6d652e-ddd4-4f9a-b9be-4946f609d2bb
+				type = FirstLaunch
+				prestige = 0
+				seed = 1295941135
+				state = Offered
+				agent = Kerbin World-Firsts Record-Keeping Society
+				deadlineType = None
+				expiryType = None
+				values = 0,0,1834.86235141754,4587.15587854385,2000,5,10.9,0,0,0,0,0
+				PARAM
+				{
+					name = LaunchVessel
+					state = Incomplete
+					values = 0,0,0,0,0
+				}
+			}
+			CONTRACT
+			{
+				guid = a657c43c-72f4-4a90-8664-5df2dac8d8cd
+				type = AltitudeRecord
+				prestige = 0
+				seed = 1295941136
+				state = Offered
+				agent = Kerbin World-Firsts Record-Keeping Society
+				deadlineType = None
+				expiryType = None
+				values = 0,0,458.715587854385,2293.57793927193,500,0,10.9,0,0,0,0,0
+				alt = 5000
+				PARAM
+				{
+					name = AltitudeRecord
+					state = Incomplete
+					values = 0,0,0,0,0
+					alt = 5000
+				}
+			}
+			CONTRACT
+			{
+				guid = 0a3927fa-88d1-43e2-a44b-075057d44ce7
+				type = OrbitKerbin
+				prestige = 2
+				seed = 1295941139
+				state = Offered
+				agent = Kerbin World-Firsts Record-Keeping Society
+				deadlineType = None
+				expiryType = None
+				values = 0,0,14763.7791931629,59055.1167726517,18750,30,142.24,0,0,0,0,0
+				PARAM
+				{
+					name = EnterOrbit
+					state = Incomplete
+					values = 0,0,0,0,0
+					body = 1
+				}
+			}
+		}
+	}
+	SCENARIO
+	{
+		name = Funding
+		scene = 7, 8, 5, 6, 9
+		funds = 10000
+	}
+	SCENARIO
+	{
+		name = ProgressTracking
+		scene = 7, 8, 5
+		Progress
+		{
+		}
+	}
+	SCENARIO
+	{
+		name = ResearchAndDevelopment
+		scene = 7, 8, 5, 6, 9
+		sci = 0
+		Tech
+		{
+			id = start
+			state = Available
+			part = mk1pod
+			part = longAntenna
+		}
+	}
+	SCENARIO
+	{
+		name = VesselRecovery
+		scene = 5, 7, 8, 6, 9
+	}
+	SCENARIO
+	{
+		name = Reputation
+		scene = 7, 8, 5, 6, 9
+		rep = 0
+	}
+	FLIGHTSTATE
+	{
+		version = 0.24.2
+		UT = 8.41999999999991
+		activeVessel = 0
+	}
+	ROSTER
+	{
+		KERBAL
+		{
+			name = Jebediah Kerman
+			type = Crew
+			brave = 0.5
+			dumb = 0.5
+			badS = True
+			state = Available
+			ToD = 0
+			idx = -1
+		}
+		KERBAL
+		{
+			name = Bill Kerman
+			type = Crew
+			brave = 0.5
+			dumb = 0.8
+			badS = False
+			state = Available
+			ToD = 0
+			idx = -1
+		}
+		KERBAL
+		{
+			name = Bob Kerman
+			type = Crew
+			brave = 0.3
+			dumb = 0.1
+			badS = False
+			state = Available
+			ToD = 0
+			idx = -1
+		}
+	}
+	MESSAGESYSTEM
+	{
+		flash = False
+	}
+}

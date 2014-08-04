@@ -11,3 +11,12 @@
 /*.userprefs
 /*.pidb
 /*.booproj
+
+# actual games I'm playing with:
+default/
+training/
+scenarios/
+Sandbox/
+
+# save-games which 
+!unit-*
